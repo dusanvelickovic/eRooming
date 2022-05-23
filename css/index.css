@@ -1,0 +1,95 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.img-bg {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+/* BRAND */
+.brand {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: #045de9;
+  background-color: white;
+  opacity: 0.95;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Carter One", cursive;
+  letter-spacing: 2px;
+}
+/* LOGIN FORM */
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0.95;
+  border-radius: 20px;
+  height: 350px;
+  width: 350px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+.form {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.form input {
+  border: none;
+  background-color: #cfd3d2;
+  border-radius: 5px;
+  padding: 10px;
+}
+.form input[type="submit"]:hover {
+  cursor: pointer;
+}
+.form input {
+  font-size: 16px;
+  border: 2px solid transparent;
+}
+.form input[type="submit"] {
+  border: 2px solid transparent;
+}
+.form input:focus {
+  outline: none;
+  border: 2px solid #045de9;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group.register {
+  text-align: center;
+}
+.form-group.register a {
+  text-decoration: underline;
+}
+.login-btn {
+  width: 50%;
+  align-self: center;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  border: none;
+}

@@ -1,0 +1,55 @@
+.login {
+  width: 700px;
+  min-height: 450px;
+}
+.inline-group {
+  display: flex;
+  justify-content: space-between;
+}
+.inline-group > :nth-child(1) {
+  margin-right: 5px;
+}
+.inline-group > :nth-child(2) {
+  margin-left: 5px;
+}
+.inline-group .form-group.street {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.inline-group > :nth-child(3) {
+  margin-left: 5px;
+}
+.form-group {
+  width: 100%;
+  height: max-content;
+}
+@media (max-width: 768px) {
+  .login {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .login {
+    width: 80%;
+    height: fit-content;
+  }
+  .inline-group {
+    flex-direction: column;
+  }
+  .inline-group > :nth-child(1) {
+    margin-right: 0px;
+  }
+  .inline-group > :nth-child(2) {
+    margin-left: 0px;
+  }
+  .inline-group .form-group.street {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .inline-group > :nth-child(3) {
+    margin-left: 0px;
+  }
+  .form-group {
+    margin-top: 10px;
+  }
+}
